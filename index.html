@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head >Expense tracker</head><br> <br> 
+    <p>Fill the falowing detailes</p>
+    <body>
+        <form onsubmit="saveToLocalStorage(event)">
+            <lable>Expense amount :</lable><br> 
+
+            <input type="text" name="money" required><br> <br>
+
+            <lable>Discription:</lable><br> 
+
+            <input type="text" name="discription" required><br> <br>
+
+            <lable>Choose catagory:</lable><br> 
+
+            <input list="catagory" name="category"><br><br>
+            <datalist id="catagory">
+
+                <option value="Movie">
+                <option value="Shoping">
+                <option value="Gym">  
+                <option value="Health"> 
+                <option value="Education"> 
+                 <option value="Friends"> 
+                </option>
+            </datalist>    
+
+            <input type="submit" value="Add Expenses">
+
+        </form>
+        
+        <script src="awaitAsynccall.js">
+        
+        </script>
+    </body>
+</html>
+
